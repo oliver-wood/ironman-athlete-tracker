@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMTrackerWeb", "IMTrackerWeb\IMTrackerWeb.csproj", "{3783B8D7-B803-42AD-87AA-30AE4D60FE3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{6F95524E-23E0-44E9-8039-69EBDDD388F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{D704F133-0C41-41E8-8F1D-7B3153532380}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{7C814E9B-F916-4643-B035-B76A0B2DAAC7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\IMTrackerWeb.json = PublishScripts\Templates\IMTrackerWeb.json
+		PublishScripts\Templates\IMTrackerWeb.param.dev.json = PublishScripts\Templates\IMTrackerWeb.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMTrackerWebJob", "IMTrackerWebJob\IMTrackerWebJob.csproj", "{83623054-7928-4FD1-9A02-E9821C1FBC06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3783B8D7-B803-42AD-87AA-30AE4D60FE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3783B8D7-B803-42AD-87AA-30AE4D60FE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3783B8D7-B803-42AD-87AA-30AE4D60FE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3783B8D7-B803-42AD-87AA-30AE4D60FE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83623054-7928-4FD1-9A02-E9821C1FBC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83623054-7928-4FD1-9A02-E9821C1FBC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83623054-7928-4FD1-9A02-E9821C1FBC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83623054-7928-4FD1-9A02-E9821C1FBC06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D704F133-0C41-41E8-8F1D-7B3153532380} = {6F95524E-23E0-44E9-8039-69EBDDD388F1}
+		{7C814E9B-F916-4643-B035-B76A0B2DAAC7} = {6F95524E-23E0-44E9-8039-69EBDDD388F1}
+	EndGlobalSection
+EndGlobal
